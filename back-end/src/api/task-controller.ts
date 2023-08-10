@@ -21,7 +21,6 @@ async function initPool(){
     })
 }
 
-throw new Error("Ijse");
 
 type Task = {
     id: number,
@@ -58,13 +57,20 @@ router.delete("/:taskId", async (req, res)=>{
     res.sendStatus(result.affectedRows ? 204 : 404);
 });
 
+
+/* Update an existing task*/
 router.patch('/:taskId', async (req, res) => {
     const task:Task = (req.body as Task);
-    task.id = +req.params.taskId;
-    if(!task.status){
+    console.log(task.status);
+    /*if(!task.status){
         res.sendStatus(400);
         return;
+    }*/
+    const result = await pool.query("UPDATE task SET description=?, status=? WHERE id=?", [task.description, task.status, req.params.taskId]);
+
+    if (result.affectedRows == 0){
+        res.sendStatus(404);
+    }else{
+        res.status(204).json(task);
     }
-    const result = await pool.query("UPDATE task SET status=? WHERE id=?", [task.status, task.id]);
-    res.sendStatus(result.affectedRows ? 204 : 404);
 });
