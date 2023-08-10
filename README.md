@@ -28,14 +28,12 @@ mark tasks as completed, and track their progress.
   - TypeScript
 
 ### Application Preview
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <img src="asset/preview1.png" alt="Screenshot 1" width="400" style="border: 2px solid red;">
-  <img src="asset/preview2.png" alt="Screenshot 2" width="400">
-  <img src="asset/preview3.png" alt="Screenshot 1" width="400">
-  <img src="asset/preview4.png" alt="Screenshot 2" width="400">
-  <img src="asset/preview5.png" alt="Screenshot 1" width="400">
-  <img src="asset/preview6.png" alt="Screenshot 2" width="400">
-</div>
+![](asset/preview1.jpg)
+![](asset/preview2.jpg)
+![](asset/preview3.jpg)
+![](asset/preview4.jpg)
+![](asset/preview5.jpg)
+![](asset/preview6.jpg)
 
 
 ## License
