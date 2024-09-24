@@ -1,9 +1,9 @@
-# Todo Task App
+# Task Maestro Whizz Todo App
 
-Todo Task App is a responsive web application designed to provide users with a user-friendly 
+Task Maestro Whizz Todo App is a responsive web application designed to provide users with a user-friendly 
 task management solution. It allows users to efficiently schedule, organize, and manage their tasks. 
 Users can seamlessly create new tasks, modify existing tasks, remove completed or unnecessary tasks, 
-mark tasks as completed, and track their progress.
+mark tasks as completed and track their progress.
 
 ### Features
 - **User-Friendly Interface:** An intuitive interface that makes task management easy for users of all levels.
